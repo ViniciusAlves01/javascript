@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <h2 id="subtitulo1">Subtitulo 1</h2>
+    <p name="paragrafo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet dolorem nihil.</p>
+    <h2 class="subtitulo2">Subtitulo 2</h2>
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ratione.</p>
+    <p class="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ratione.</p>
+    <script>
+        //mudando o background do body
+        var backbody = document.body
+        backbody.style.background = '#1a1a1a'
+
+        //alterando o h1 e mostrando com innerText (que pega somente o texto sem fomatação). para texto formatado se utiliza innerHTML. para mudar o texto utiliza-se nomeVar.innerText = 'text'
+        var titulo = document.getElementsByTagName('h1')[0]
+        titulo.style.width = '100px'
+        titulo.style.color = 'green'
+        titulo.style.background = 'lightgreen'
+        titulo.style.padding = '10px'
+        document.write(titulo.innerText)
+
+        //mudando a cor do primeiro h1 através da seleção por ID
+        var h2a = document.getElementById('subtitulo1')
+        h2a.style.width = '130px'
+        h2a.style.color = '#3deada'
+        h2a.style.background = 'blue'
+        h2a.style.padding = '10px'
+
+        //Configurando o p do body atraves da seleção por Name
+        var p1 = document.getElementsByName('paragrafo1')[0]
+        p1.style.background = 'lightblue'
+        p1.style.width = '535px'
+        p1.style.padding = '10px'
+        p1.style.color = '#1a1a1a'
+
+        //Configurando o segundo subtitulo através da seleção por Class
+        var h2b = document.getElementsByClassName('subtitulo2')[0]
+        h2b.style.background = 'darkred'
+        h2b.style.width = '130px'
+        h2b.style.padding = '10px'
+
+        //Configurando os ultimos p's atraves do selector ID. utiliza-se '#'
+        var p2 = document.querySelector('#p2')
+        p2.style.width = '535px'
+        p2.style.background = 'orange'
+        p2.style.padding = '10px'
+
+        //Configurando os ultimos p's atraves do selector Class. utiliza-se '.'
+        var p3 = document.querySelector('.p3')
+        p3.style.width = '535px'
+        p3.style.background = 'purple'
+        p3.style.padding = '10px'
+    </script>
+</body>
+</html>

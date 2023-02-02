@@ -114,3 +114,27 @@
        var s = n1+ n2
        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Lembrar que o + é concatenação
 
+ Como ACESSAR/SELECIONAR ELEMENTOS através do DOM:
+  Lista de 5 MÉTODOS de acesso:
+by Tag         - getElementsByTagName("")
+by ID            - getElementByID("")
+by Name     - getElementsByName("")
+by Class      - getElementsByClassName("")
+by Selector - querySelector (""); querySelectorAll ("");
+
+O método getElementsByTagName() SELECIONA ELEMENTOS via TAG.
+O método getElementById() SELECIONA UM ELEMENTO via ID.
+O método getElementsByName() SELECIONA ELEMENTOS via NOME.
+O método getElementsByClassName("") SELECIONA ELEMENTOS via CLASSE.
+O método querySelector() SELECIONA UM ELEMENTO via SELETOR CSS.
+O método queySelectorAll() SELECIONA ELEMENTOS via SELETOR CSS.
+
+*Atente-se que alguns dos seletores estão no SINGULAR e outros no PLURAL (Element e Element*S*)
+Caso utilize um seletor que está no PLURAL, para ESPECIFICAR qual TAG, NAME ou CLASS você deseja ACESSAR, você têm que usar, após os parênteses (), os colchetes [] e, dentro destes, você indicará qual a POSIÇÃO do elemento que você deseja ACESSAR.
+Ex da aula:
+document.getElementsByTagName('p')[1];
+Neste exemplo selecionou-se, dentro dos parênteses, todas as tags <p>. E, dentro dos colchetes, selecionou-se a tag <p> que se encontra na 1° POSIÇÃO, ou seja, a 2° tag <p>.
+*Lembrando que a contagem começa em 0. Portanto:
+a posição 0 é a 1° tag <p>
+a posição 1 é a 2° tag <p>
+a posição 2 é a 3° tag <p> ...
