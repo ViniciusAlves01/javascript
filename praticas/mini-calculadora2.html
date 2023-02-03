@@ -8,31 +8,59 @@
     <style>
         body{
             margin: 0;
-
+            padding: 0;
         }
-        div{
-            padding-top: 100px;
-            justify-content: center;
+        #container{
+            background-color: aquamarine;
+            padding: 20px;
+            width: 300px;
             margin: auto;
-            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        button{
-            width: ;
+        #calculadora{
+            background-color: bisque;
+            
         }
     </style>
 </head>
 <body>
-    <div>
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="4">
-        <input type="button" value="5">
-        <input type="button" value="6">
-        <input type="button" value="7">
-        <input type="button" value="8">
-        <input type="button" value="9">
-        <input type="button" value="0">
-    </div>
+    <main id="container">
+        <div id="calculadora">
+            <table>
+                <tr>
+                    <td><button>%</button></td>
+                    <td><button>CE</button></td>
+                    <td><button>C</button></td>
+                    <td><button><</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>/</button></td>
+                </tr>
+                <tr>
+                    <td><button>6</button></td>
+                    <td><button>5</button></td>
+                    <td><button>4</button></td>
+                    <td><button>3</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
