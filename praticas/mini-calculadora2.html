@@ -6,58 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Calculadora 2.0</title>
     <style>
-        body{
+        *{
             margin: 0;
             padding: 0;
         }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         #container{
-            background-color: aquamarine;
-            padding: 20px;
-            width: 300px;
-            margin: auto;
+            background-color: #1a1a1a;
+            padding: 25px;
+            border: 3px solid;
+            border-radius: 15px;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
         #calculadora{
-            background-color: bisque;
+            background-color: rgba(59, 183, 214, 0.706);
+            padding: 25px;
+            border: 3px solid white;
+            border-radius: 10px;
             
+        }
+        table{
+        }
+        .botao{
+            padding: 10px;
+            margin: 2px;
+            width: 50px;
+            height: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: 1.7px solid white;
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            color: white;
+            box-shadow: 1px 1px 1px #00000082;
         }
     </style>
 </head>
 <body>
     <main id="container">
+        <h1>Calculadora</h1>
         <div id="calculadora">
+            <p>ewfwef</p>
             <table>
                 <tr>
-                    <td><button>%</button></td>
-                    <td><button>CE</button></td>
-                    <td><button>C</button></td>
-                    <td><button><</button></td>
+                    <td><button class="botao">%</button></td>
+                    <td><button class="botao">C</button></td>
+                    <td><button class="botao"><</button></td>
+                    <td><button class="botao">/</button></td>
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
-                    <td><button>8</button></td>
-                    <td><button>9</button></td>
-                    <td><button>/</button></td>
+                    <td><button class="botao">7</button></td>
+                    <td><button class="botao">8</button></td>
+                    <td><button class="botao">9</button></td>
+                    <td><button class="botao">X</button></td>
                 </tr>
                 <tr>
-                    <td><button>6</button></td>
-                    <td><button>5</button></td>
-                    <td><button>4</button></td>
-                    <td><button>3</button></td>
+                    <td><button class="botao">4</button></td>
+                    <td><button class="botao">5</button></td>
+                    <td><button class="botao">6</button></td>
+                    <td><button class="botao">-</button></td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
+                    <td><button class="botao">1</button></td>
+                    <td><button class="botao">2</button></td>
+                    <td><button class="botao">3</button></td>
+                    <td><button class="botao">+</button></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><button class="botao">0</button></td>
+                    <td><button class="botao">,</button></td>
+                    <td colspan="2"><button class="botao" style="width: 106px;">=</button></td>
                 </tr>
             </table>
         </div>
