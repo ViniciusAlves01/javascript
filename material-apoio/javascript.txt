@@ -140,7 +140,11 @@ a posição 1 é a 2° tag <p>
 a posição 2 é a 3° tag <p> ...
 
 
-ATRIBUTOS JS
+METODOS JS
 .setAttribute('', '') - adicionar um atributo, pode ser uma classe/id, um source e etc.
 document.createElement('') - cria um novo elemento a partir do JS
 .appendChild() - adiciona um novo elemento no HTML a partir do JS
+.short() - organiza os elementos em ordem crescente, porem pela casa decimal
+
+ATRIBUTOS JS
+.length
