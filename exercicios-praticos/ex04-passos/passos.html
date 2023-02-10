@@ -4,57 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="passos.css">
     <title>Passos</title>
-    <style>
-        *{
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: #42e6b5;
-        }
-        header{
-            text-align: center;
-            color: #185140;
-            margin: 20px;
-        }
-        main{
-            width: 350px;
-            margin: auto;
-            background-color: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 8px #1a1a1a5d;
-        }
-        main > p{
-            margin: 10px 0px;
-            font-size: 1.2em;
-        }
-        .caixa{
-            border-radius: 7px;
-            border: 2px solid #185140;
-            padding: 2px;
-            text-align: center;
-            width: 70px;
-        }
-        #botao{
-            padding: 7px;
-            font-size: 1.2em;
-            margin: 15px auto 0px auto;
-            display: block;
-            border-radius: 10px;
-            background-color: #185140;
-            color: white;
-            border: none;
-            box-shadow: 0px 0px 5px #1a1a1a5d;
-            cursor: pointer;
-        }
-        #botao:hover{
-            background-color: #42e6b5;
-            color: #185140;
-        }
-    </style>
 </head>
 <body>
     <header><h1>Contando Passos...</h1></header>
@@ -71,17 +22,6 @@
         <input type="button" value="Contar" id="botao" onclick="calcular()">
         <p id="res"></p>
     </main>
-    <script>
-        function calcular(){
-            var nInicio = document.querySelector('#inicio')
-            var nFim = document.querySelector('#fim')
-            var nPassos = document.querySelector('#passos')
-            if(nInicio.value.length == 0 || nFim.value.length == 0 || nPassos.value.length == 0){
-                alert('[ERRO!] Preencha os campos corretamente.')
-            }else{
-                alert('correto')
-            }
-        }
-    </script>
+    <script src="passos.js"></script>
 </body>
 </html>
